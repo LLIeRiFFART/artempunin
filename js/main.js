@@ -1028,15 +1028,10 @@
       { rel: 'apple-touch-icon', file: 'apple-touch-icon.png' }
     ].forEach(function (item) {
       if (document.querySelector('link[rel="' + item.rel + '"]')) return;
-      var url = base + item.file;
-      fetch(url, { method: 'HEAD' }).then(function (res) {
-        if (!res.ok || !alive) return;
-        if (document.querySelector('link[rel="' + item.rel + '"]')) return;
-        var link = document.createElement('link');
-        link.rel = item.rel;
-        link.href = url;
-        document.head.appendChild(link);
-      }).catch(function () {});
+      var link = document.createElement('link');
+      link.rel = item.rel;
+      link.href = base + item.file;
+      document.head.appendChild(link);
     });
   }
 

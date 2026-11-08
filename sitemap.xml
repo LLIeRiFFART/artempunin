@@ -3,73 +3,73 @@
         xmlns:xhtml="http://www.w3.org/1999/xhtml">
 
   <url>
-    <loc>https://__DOMAIN__/</loc>
-    <xhtml:link rel="alternate" hreflang="en" href="https://__DOMAIN__/"/>
-    <xhtml:link rel="alternate" hreflang="ru" href="https://__DOMAIN__/index-ru.html"/>
-    <xhtml:link rel="alternate" hreflang="x-default" href="https://__DOMAIN__/"/>
+    <loc>https://artempunin.vercel.app/</loc>
+    <xhtml:link rel="alternate" hreflang="en" href="https://artempunin.vercel.app/"/>
+    <xhtml:link rel="alternate" hreflang="ru" href="https://artempunin.vercel.app/index-ru.html"/>
+    <xhtml:link rel="alternate" hreflang="x-default" href="https://artempunin.vercel.app/"/>
   </url>
 
   <url>
-    <loc>https://__DOMAIN__/index-ru.html</loc>
-    <xhtml:link rel="alternate" hreflang="en" href="https://__DOMAIN__/"/>
-    <xhtml:link rel="alternate" hreflang="ru" href="https://__DOMAIN__/index-ru.html"/>
-    <xhtml:link rel="alternate" hreflang="x-default" href="https://__DOMAIN__/"/>
+    <loc>https://artempunin.vercel.app/index-ru.html</loc>
+    <xhtml:link rel="alternate" hreflang="en" href="https://artempunin.vercel.app/"/>
+    <xhtml:link rel="alternate" hreflang="ru" href="https://artempunin.vercel.app/index-ru.html"/>
+    <xhtml:link rel="alternate" hreflang="x-default" href="https://artempunin.vercel.app/"/>
   </url>
 
   <url>
-    <loc>https://__DOMAIN__/services/landing.html</loc>
-    <xhtml:link rel="alternate" hreflang="en" href="https://__DOMAIN__/services/landing.html"/>
-    <xhtml:link rel="alternate" hreflang="ru" href="https://__DOMAIN__/services/landing-ru.html"/>
-    <xhtml:link rel="alternate" hreflang="x-default" href="https://__DOMAIN__/services/landing.html"/>
+    <loc>https://artempunin.vercel.app/services/landing.html</loc>
+    <xhtml:link rel="alternate" hreflang="en" href="https://artempunin.vercel.app/services/landing.html"/>
+    <xhtml:link rel="alternate" hreflang="ru" href="https://artempunin.vercel.app/services/landing-ru.html"/>
+    <xhtml:link rel="alternate" hreflang="x-default" href="https://artempunin.vercel.app/services/landing.html"/>
   </url>
 
   <url>
-    <loc>https://__DOMAIN__/services/landing-ru.html</loc>
-    <xhtml:link rel="alternate" hreflang="en" href="https://__DOMAIN__/services/landing.html"/>
-    <xhtml:link rel="alternate" hreflang="ru" href="https://__DOMAIN__/services/landing-ru.html"/>
-    <xhtml:link rel="alternate" hreflang="x-default" href="https://__DOMAIN__/services/landing.html"/>
+    <loc>https://artempunin.vercel.app/services/landing-ru.html</loc>
+    <xhtml:link rel="alternate" hreflang="en" href="https://artempunin.vercel.app/services/landing.html"/>
+    <xhtml:link rel="alternate" hreflang="ru" href="https://artempunin.vercel.app/services/landing-ru.html"/>
+    <xhtml:link rel="alternate" hreflang="x-default" href="https://artempunin.vercel.app/services/landing.html"/>
   </url>
 
   <url>
-    <loc>https://__DOMAIN__/services/multipage.html</loc>
-    <xhtml:link rel="alternate" hreflang="en" href="https://__DOMAIN__/services/multipage.html"/>
-    <xhtml:link rel="alternate" hreflang="ru" href="https://__DOMAIN__/services/multipage-ru.html"/>
-    <xhtml:link rel="alternate" hreflang="x-default" href="https://__DOMAIN__/services/multipage.html"/>
+    <loc>https://artempunin.vercel.app/services/multipage.html</loc>
+    <xhtml:link rel="alternate" hreflang="en" href="https://artempunin.vercel.app/services/multipage.html"/>
+    <xhtml:link rel="alternate" hreflang="ru" href="https://artempunin.vercel.app/services/multipage-ru.html"/>
+    <xhtml:link rel="alternate" hreflang="x-default" href="https://artempunin.vercel.app/services/multipage.html"/>
   </url>
 
   <url>
-    <loc>https://__DOMAIN__/services/multipage-ru.html</loc>
-    <xhtml:link rel="alternate" hreflang="en" href="https://__DOMAIN__/services/multipage.html"/>
-    <xhtml:link rel="alternate" hreflang="ru" href="https://__DOMAIN__/services/multipage-ru.html"/>
-    <xhtml:link rel="alternate" hreflang="x-default" href="https://__DOMAIN__/services/multipage.html"/>
+    <loc>https://artempunin.vercel.app/services/multipage-ru.html</loc>
+    <xhtml:link rel="alternate" hreflang="en" href="https://artempunin.vercel.app/services/multipage.html"/>
+    <xhtml:link rel="alternate" hreflang="ru" href="https://artempunin.vercel.app/services/multipage-ru.html"/>
+    <xhtml:link rel="alternate" hreflang="x-default" href="https://artempunin.vercel.app/services/multipage.html"/>
   </url>
 
   <url>
-    <loc>https://__DOMAIN__/services/hosting.html</loc>
-    <xhtml:link rel="alternate" hreflang="en" href="https://__DOMAIN__/services/hosting.html"/>
-    <xhtml:link rel="alternate" hreflang="ru" href="https://__DOMAIN__/services/hosting-ru.html"/>
-    <xhtml:link rel="alternate" hreflang="x-default" href="https://__DOMAIN__/services/hosting.html"/>
+    <loc>https://artempunin.vercel.app/services/hosting.html</loc>
+    <xhtml:link rel="alternate" hreflang="en" href="https://artempunin.vercel.app/services/hosting.html"/>
+    <xhtml:link rel="alternate" hreflang="ru" href="https://artempunin.vercel.app/services/hosting-ru.html"/>
+    <xhtml:link rel="alternate" hreflang="x-default" href="https://artempunin.vercel.app/services/hosting.html"/>
   </url>
 
   <url>
-    <loc>https://__DOMAIN__/services/hosting-ru.html</loc>
-    <xhtml:link rel="alternate" hreflang="en" href="https://__DOMAIN__/services/hosting.html"/>
-    <xhtml:link rel="alternate" hreflang="ru" href="https://__DOMAIN__/services/hosting-ru.html"/>
-    <xhtml:link rel="alternate" hreflang="x-default" href="https://__DOMAIN__/services/hosting.html"/>
+    <loc>https://artempunin.vercel.app/services/hosting-ru.html</loc>
+    <xhtml:link rel="alternate" hreflang="en" href="https://artempunin.vercel.app/services/hosting.html"/>
+    <xhtml:link rel="alternate" hreflang="ru" href="https://artempunin.vercel.app/services/hosting-ru.html"/>
+    <xhtml:link rel="alternate" hreflang="x-default" href="https://artempunin.vercel.app/services/hosting.html"/>
   </url>
 
   <url>
-    <loc>https://__DOMAIN__/services/support.html</loc>
-    <xhtml:link rel="alternate" hreflang="en" href="https://__DOMAIN__/services/support.html"/>
-    <xhtml:link rel="alternate" hreflang="ru" href="https://__DOMAIN__/services/support-ru.html"/>
-    <xhtml:link rel="alternate" hreflang="x-default" href="https://__DOMAIN__/services/support.html"/>
+    <loc>https://artempunin.vercel.app/services/support.html</loc>
+    <xhtml:link rel="alternate" hreflang="en" href="https://artempunin.vercel.app/services/support.html"/>
+    <xhtml:link rel="alternate" hreflang="ru" href="https://artempunin.vercel.app/services/support-ru.html"/>
+    <xhtml:link rel="alternate" hreflang="x-default" href="https://artempunin.vercel.app/services/support.html"/>
   </url>
 
   <url>
-    <loc>https://__DOMAIN__/services/support-ru.html</loc>
-    <xhtml:link rel="alternate" hreflang="en" href="https://__DOMAIN__/services/support.html"/>
-    <xhtml:link rel="alternate" hreflang="ru" href="https://__DOMAIN__/services/support-ru.html"/>
-    <xhtml:link rel="alternate" hreflang="x-default" href="https://__DOMAIN__/services/support.html"/>
+    <loc>https://artempunin.vercel.app/services/support-ru.html</loc>
+    <xhtml:link rel="alternate" hreflang="en" href="https://artempunin.vercel.app/services/support.html"/>
+    <xhtml:link rel="alternate" hreflang="ru" href="https://artempunin.vercel.app/services/support-ru.html"/>
+    <xhtml:link rel="alternate" hreflang="x-default" href="https://artempunin.vercel.app/services/support.html"/>
   </url>
 
 </urlset>
