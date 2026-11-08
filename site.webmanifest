@@ -1,0 +1,32 @@
+{
+  "name": "Artem Punin — web designer & no-code developer",
+  "short_name": "Artem Punin",
+  "description": "Websites that attract customers. I design, build and launch sites for small businesses, then support them after launch.",
+  "lang": "en",
+  "dir": "ltr",
+  "start_url": "/",
+  "scope": "/",
+  "display": "minimal-ui",
+  "background_color": "#edf1f5",
+  "theme_color": "#edf1f5",
+  "icons": [
+    {
+      "src": "/icon.svg",
+      "sizes": "any",
+      "type": "image/svg+xml",
+      "purpose": "any"
+    },
+    {
+      "src": "/icon.svg",
+      "sizes": "any",
+      "type": "image/svg+xml",
+      "purpose": "maskable"
+    },
+    {
+      "src": "/icon-512.png",
+      "sizes": "512x512",
+      "type": "image/png",
+      "purpose": "any maskable"
+    }
+  ]
+}

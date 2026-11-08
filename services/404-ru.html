@@ -1,0 +1,86 @@
+<!DOCTYPE html>
+<html lang="ru">
+<head>
+  <meta charset="UTF-8">
+  <meta name="viewport" content="width=device-width, initial-scale=1">
+  <title>Страница не найдена — Artem Punin</title>
+  <meta name="description" content="404 — такой страницы нет или она переехала. Вернитесь на главную или сразу переходите к работам.">
+  <meta name="theme-color" content="#edf1f5">
+  <meta name="robots" content="noindex, follow">
+
+  <link rel="preconnect" href="https://fonts.googleapis.com">
+  <link rel="preconnect" href="https://fonts.gstatic.com" crossorigin>
+  <link href="https://fonts.googleapis.com/css2?family=Onest:wght@300..900&display=swap" rel="stylesheet">
+
+  <!-- пути от корня: Vercel отдаёт эту страницу на любом несуществующем адресе -->
+  <link rel="icon" href="/icon.svg" type="image/svg+xml">
+
+  <link rel="stylesheet" href="/css/style.css">
+</head>
+<body>
+
+<div class="site" data-page-lang="ru" data-page-title="Страница не найдена — Artem Punin">
+
+  <header class="hdr">
+    <a class="logo" href="/index-ru.html" aria-label="Artem Punin">
+      <span class="logo__mark" aria-hidden="true">AP</span>
+      <span>Artem Punin
+        <small>нейро/веб-дизайнер</small>
+      </span>
+    </a>
+    <div class="lang" role="group" aria-label="Язык">
+      <a href="/404.html" data-lang="en" aria-current="false">EN</a>
+      <a href="/404-ru.html" data-lang="ru" aria-current="true">RU</a>
+    </div>
+  </header>
+
+  <main>
+
+    <section class="hero hero--404">
+      <div class="hero__bg" aria-hidden="true">
+        <span class="orb orb--1" data-parallax="0.09" data-reveal style="--d:160"></span>
+        <span class="orb orb--2" data-parallax="0.12" data-reveal style="--d:260"></span>
+        <span class="orb orb--3" data-parallax="-0.08" data-reveal style="--d:340"></span>
+        <span class="tile tile--1" data-parallax="-0.06" data-reveal style="--d:300"></span>
+        <span class="tile tile--2" data-parallax="0.07" data-reveal style="--d:210"></span>
+      </div>
+
+      <div class="nf">
+        <div class="nf__win" data-tilt data-reveal>
+          <div class="nf__bar" aria-hidden="true">
+            <span class="nf__dots"><i></i><i></i><i></i></span>
+            <span class="nf__url">…/<em>404</em></span>
+            <span class="nf__code">Ошибка</span>
+          </div>
+
+          <div class="nf__screen">
+            <span class="nf__num" aria-hidden="true">4<em>0</em>4</span>
+
+            <h1 class="nf__title" data-reveal="words">Эта страница не долетела до запуска</h1>
+
+            <p class="lead nf__lead" data-reveal style="--d:120">
+              Адрес сломался или страница переехала. Всё остальное на месте — начните с главной или сразу переходите к работам.
+            </p>
+
+            <div class="nf__actions" data-reveal style="--d:200">
+              <a class="btn btn--primary" href="/index-ru.html" data-magnetic>
+                <span>На главную</span>
+                <svg viewBox="0 0 24 24" fill="none" stroke="currentColor" stroke-width="2.2" stroke-linecap="round" stroke-linejoin="round" aria-hidden="true"><path d="M7 17 17 7M8 7h9v9"/></svg>
+              </a>
+              <a class="btn btn--ghost" href="/index-ru.html#cases" data-magnetic>
+                <span>Смотреть кейсы</span>
+                <svg viewBox="0 0 24 24" fill="none" stroke="currentColor" stroke-width="2.2" stroke-linecap="round" stroke-linejoin="round" aria-hidden="true"><path d="M7 17 17 7M8 7h9v9"/></svg>
+              </a>
+            </div>
+          </div>
+        </div>
+      </div>
+    </section>
+
+  </main>
+
+</div>
+
+<script src="/js/main.js" defer></script>
+</body>
+</html>
