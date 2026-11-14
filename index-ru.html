@@ -37,6 +37,37 @@
   <!-- иконки: favicon векторный; манифест и apple-touch подключает main.js на http(s) -->
   <link rel="icon" href="icon.svg" type="image/svg+xml">
 
+  <script type="application/ld+json">
+  {
+    "@context": "https://schema.org",
+    "@graph": [
+      {
+        "@type": "Person",
+        "@id": "https://artempunin.vercel.app/#person",
+        "name": "Artem Punin",
+        "url": "https://artempunin.vercel.app/",
+        "jobTitle": "Веб-дизайнер и no-code разработчик"
+      },
+      {
+        "@type": "WebSite",
+        "@id": "https://artempunin.vercel.app/#website",
+        "url": "https://artempunin.vercel.app/",
+        "name": "Artem Punin",
+        "inLanguage": ["en", "ru"],
+        "publisher": { "@id": "https://artempunin.vercel.app/#person" }
+      },
+      {
+        "@type": "WebPage",
+        "@id": "https://artempunin.vercel.app/index-ru.html#webpage",
+        "url": "https://artempunin.vercel.app/index-ru.html",
+        "name": "Artem Punin — веб-дизайнер и no-code разработчик",
+        "inLanguage": "ru",
+        "isPartOf": { "@id": "https://artempunin.vercel.app/#website" },
+        "about": { "@id": "https://artempunin.vercel.app/#person" }
+      }
+    ]
+  }
+  </script>
   <link rel="stylesheet" href="css/style.css">
 </head>
 <body>
@@ -72,9 +103,9 @@
     </ul>
 
     <div class="menu__aside">
-      <a class="menu__cta-circle" href="#" data-stub aria-disabled="true" data-magnetic="0.2">
-        <span>Связаться</span>
-        <span>со мной</span>
+      <a class="btn btn--primary menu__button" href="#" data-stub aria-disabled="true" data-magnetic>
+        <span>Связаться со мной</span>
+        <svg viewBox="0 0 24 24" fill="none" stroke="currentColor" stroke-width="2.2" stroke-linecap="round" stroke-linejoin="round" aria-hidden="true"><path d="M7 17 17 7M8 7h9v9"/></svg>
       </a>
     </div>
   </nav>
@@ -401,7 +432,7 @@
 
       <div class="cases__grid">
         <div class="cases__col">
-          <a class="case" href="#" data-case="1" data-stub="Ссылка на проект появится здесь совсем скоро" aria-disabled="true" data-reveal>
+          <a class="case" href="https://amara-peach.vercel.app/" target="_blank" rel="noopener noreferrer" data-case="1" style="--case-order: 1" data-reveal>
             <img class="case__img" src="img/1_Amara.jpg" alt="Amara" loading="lazy">
             <span class="case__glare" aria-hidden="true"></span>
             <div class="case__bar" aria-hidden="true"><span class="case__dots"><i></i><i></i><i></i></span><span class="case__url">Amara</span><span class="case__year">2026</span></div>
@@ -411,29 +442,7 @@
             </div>
           </a>
 
-          <a class="case case--square" href="#" data-case="4" data-stub="Ссылка на проект появится здесь совсем скоро" aria-disabled="true" data-reveal>
-            <img class="case__img" src="img/4_Vanta.jpg" alt="Vanta" loading="lazy">
-            <span class="case__glare" aria-hidden="true"></span>
-            <div class="case__bar" aria-hidden="true"><span class="case__dots"><i></i><i></i><i></i></span><span class="case__url">Vanta</span><span class="case__year">2026</span></div>
-            <div class="case__info">
-              <h3 class="case__title">Барбершоп · Лендинг</h3>
-              <p class="case__desc">Сайт барбершопа: услуги, мастера и запись за две минуты.</p>
-            </div>
-          </a>
-
-          <a class="case" href="#" data-case="7" data-stub="Ссылка на проект появится здесь совсем скоро" aria-disabled="true" data-reveal>
-            <img class="case__img" src="img/7_EditByTommy.jpg" alt="EditByTommy" loading="lazy">
-            <span class="case__glare" aria-hidden="true"></span>
-            <div class="case__bar" aria-hidden="true"><span class="case__dots"><i></i><i></i><i></i></span><span class="case__url">EditByTommy</span><span class="case__year">2026</span></div>
-            <div class="case__info">
-              <h3 class="case__title">Монтаж · Обучение</h3>
-              <p class="case__desc">Курс по монтажу в Premiere Pro: уроки, практика и разбор работ.</p>
-            </div>
-          </a>
-        </div>
-
-        <div class="cases__col">
-          <a class="case case--square" href="#" data-case="2" data-stub="Ссылка на проект появится здесь совсем скоро" aria-disabled="true" data-reveal>
+          <a class="case case--square" href="https://crema-alpha.vercel.app/" target="_blank" rel="noopener noreferrer" data-case="2" style="--case-order: 4" data-reveal>
             <img class="case__img" src="img/2_Crema.jpg" alt="Crema" loading="lazy">
             <span class="case__glare" aria-hidden="true"></span>
             <div class="case__bar" aria-hidden="true"><span class="case__dots"><i></i><i></i><i></i></span><span class="case__url">Crema</span><span class="case__year">2026</span></div>
@@ -443,7 +452,39 @@
             </div>
           </a>
 
-          <a class="case" href="#" data-case="5" data-stub="Ссылка на проект появится здесь совсем скоро" aria-disabled="true" data-reveal>
+          <a class="case" href="https://umami-ten-psi-68.vercel.app/" target="_blank" rel="noopener noreferrer" data-case="10" style="--case-order: 7" data-reveal>
+            <img class="case__img" src="img/10_Umami.jpg" alt="Umami" loading="lazy">
+            <span class="case__glare" aria-hidden="true"></span>
+            <div class="case__bar" aria-hidden="true"><span class="case__dots"><i></i><i></i><i></i></span><span class="case__url">Umami</span><span class="case__year">2025</span></div>
+            <div class="case__info">
+              <h3 class="case__title">Рамен · Доставка</h3>
+              <p class="case__desc">Доставка рамена и боулов: меню, корзина и заказ за пару минут.</p>
+            </div>
+          </a>
+        </div>
+
+        <div class="cases__col">
+          <a class="case case--square" href="https://vanta-vert-beta.vercel.app/" target="_blank" rel="noopener noreferrer" data-case="4" style="--case-order: 2" data-reveal>
+            <img class="case__img" src="img/4_Vanta.jpg" alt="Vanta" loading="lazy">
+            <span class="case__glare" aria-hidden="true"></span>
+            <div class="case__bar" aria-hidden="true"><span class="case__dots"><i></i><i></i><i></i></span><span class="case__url">Vanta</span><span class="case__year">2026</span></div>
+            <div class="case__info">
+              <h3 class="case__title">Барбершоп · Лендинг</h3>
+              <p class="case__desc">Сайт барбершопа: услуги, мастера и запись за две минуты.</p>
+            </div>
+          </a>
+
+          <a class="case" href="https://editbytommy.vercel.app/" target="_blank" rel="noopener noreferrer" data-case="7" style="--case-order: 5" data-reveal>
+            <img class="case__img" src="img/7_EditByTommy.jpg" alt="EditByTommy" loading="lazy">
+            <span class="case__glare" aria-hidden="true"></span>
+            <div class="case__bar" aria-hidden="true"><span class="case__dots"><i></i><i></i><i></i></span><span class="case__url">EditByTommy</span><span class="case__year">2026</span></div>
+            <div class="case__info">
+              <h3 class="case__title">Монтаж · Обучение</h3>
+              <p class="case__desc">Курс по монтажу в Premiere Pro: уроки, практика и разбор работ.</p>
+            </div>
+          </a>
+
+          <a class="case case--wide" href="https://black-oak-sigma.vercel.app/" target="_blank" rel="noopener noreferrer" data-case="5" style="--case-order: 8" data-reveal>
             <img class="case__img" src="img/5_Black Oak.jpg" alt="Black Oak" loading="lazy">
             <span class="case__glare" aria-hidden="true"></span>
             <div class="case__bar" aria-hidden="true"><span class="case__dots"><i></i><i></i><i></i></span><span class="case__url">Black Oak</span><span class="case__year">2025</span></div>
@@ -452,30 +493,20 @@
               <p class="case__desc">Сайт коптильни: мясо, наборы для гриля и доставка по городу.</p>
             </div>
           </a>
-
-          <a class="case case--wide" href="#" data-case="8" data-stub="Ссылка на проект появится здесь совсем скоро" aria-disabled="true" data-reveal>
-            <img class="case__img" src="img/8_TopAce.jpg" alt="Top Ace" loading="lazy">
-            <span class="case__glare" aria-hidden="true"></span>
-            <div class="case__bar" aria-hidden="true"><span class="case__dots"><i></i><i></i><i></i></span><span class="case__url">Top Ace</span><span class="case__year">2025</span></div>
-            <div class="case__info">
-              <h3 class="case__title">Теннис · Обучение</h3>
-              <p class="case__desc">Сайт тренера по теннису: занятия, программа и запись.</p>
-            </div>
-          </a>
         </div>
 
         <div class="cases__col">
-          <a class="case" href="#" data-case="3" data-stub="Ссылка на проект появится здесь совсем скоро" aria-disabled="true" data-reveal>
-            <img class="case__img" src="img/3_Puffy.jpg" alt="Puffy" loading="lazy">
+          <a class="case" href="https://lunevo.vercel.app/" target="_blank" rel="noopener noreferrer" data-case="9" style="--case-order: 3" data-reveal>
+            <img class="case__img" src="img/9_Lunevo.jpg" alt="Lunevo" loading="lazy">
             <span class="case__glare" aria-hidden="true"></span>
-            <div class="case__bar" aria-hidden="true"><span class="case__dots"><i></i><i></i><i></i></span><span class="case__url">Puffy</span><span class="case__year">2025</span></div>
+            <div class="case__bar" aria-hidden="true"><span class="case__dots"><i></i><i></i><i></i></span><span class="case__url">Lunevo</span><span class="case__year">2026</span></div>
             <div class="case__info">
-              <h3 class="case__title">Мебель · Магазин</h3>
-              <p class="case__desc">Магазин пуфов: цвета, ткани и доставка по всей стране.</p>
+              <h3 class="case__title">Техника · Магазин</h3>
+              <p class="case__desc">Магазин роботов-пылесосов: подбор по дому, доставка и гарантия.</p>
             </div>
           </a>
 
-          <a class="case case--wide" href="#" data-case="6" data-stub="Ссылка на проект появится здесь совсем скоро" aria-disabled="true" data-reveal>
+          <a class="case case--wide" href="https://bytevault-kappa.vercel.app/" target="_blank" rel="noopener noreferrer" data-case="6" style="--case-order: 6" data-reveal>
             <img class="case__img" src="img/6_ByteVault.jpg" alt="ByteVault" loading="lazy">
             <span class="case__glare" aria-hidden="true"></span>
             <div class="case__bar" aria-hidden="true"><span class="case__dots"><i></i><i></i><i></i></span><span class="case__url">ByteVault</span><span class="case__year">2026</span></div>
@@ -485,24 +516,24 @@
             </div>
           </a>
 
-          <a class="case case--square" href="#" data-case="9" data-stub="Ссылка на проект появится здесь совсем скоро" aria-disabled="true" data-reveal>
-            <img class="case__img" src="img/9_Lunevo.jpg" alt="Lunevo" loading="lazy">
+          <a class="case case--square" href="https://puffy-sigma.vercel.app/" target="_blank" rel="noopener noreferrer" data-case="3" style="--case-order: 9" data-reveal>
+            <img class="case__img" src="img/3_Puffy.jpg" alt="Puffy" loading="lazy">
             <span class="case__glare" aria-hidden="true"></span>
-            <div class="case__bar" aria-hidden="true"><span class="case__dots"><i></i><i></i><i></i></span><span class="case__url">Lunevo</span><span class="case__year">2026</span></div>
+            <div class="case__bar" aria-hidden="true"><span class="case__dots"><i></i><i></i><i></i></span><span class="case__url">Puffy</span><span class="case__year">2025</span></div>
             <div class="case__info">
-              <h3 class="case__title">Техника · Магазин</h3>
-              <p class="case__desc">Магазин роботов-пылесосов: подбор по дому, доставка и гарантия.</p>
+              <h3 class="case__title">Мебель · Магазин</h3>
+              <p class="case__desc">Магазин пуфов: цвета, ткани и доставка по всей стране.</p>
             </div>
           </a>
         </div>
 
-        <a class="case case--full" href="#" data-case="10" data-stub="Ссылка на проект появится здесь совсем скоро" aria-disabled="true" data-reveal>
-          <img class="case__img" src="img/10_Umami.jpg" alt="Umami" loading="lazy">
+        <a class="case case--full" href="https://topace-six.vercel.app/" target="_blank" rel="noopener noreferrer" data-case="8" style="--case-order: 10" data-reveal>
+          <img class="case__img" src="img/8_TopAce.jpg" alt="Top Ace" loading="lazy">
           <span class="case__glare" aria-hidden="true"></span>
-          <div class="case__bar" aria-hidden="true"><span class="case__dots"><i></i><i></i><i></i></span><span class="case__url">Umami</span><span class="case__year">2025</span></div>
+          <div class="case__bar" aria-hidden="true"><span class="case__dots"><i></i><i></i><i></i></span><span class="case__url">Top Ace</span><span class="case__year">2025</span></div>
           <div class="case__info">
-            <h3 class="case__title">Рамен · Доставка</h3>
-            <p class="case__desc">Доставка рамена и боулов: меню, корзина и заказ за пару минут.</p>
+            <h3 class="case__title">Теннис · Обучение</h3>
+            <p class="case__desc">Сайт тренера по теннису: занятия, программа и запись.</p>
           </div>
         </a>
       </div>
@@ -542,8 +573,6 @@
               <svg viewBox="0 0 20 20" fill="currentColor"><path d="m10 1.5 2.6 5.3 5.9.8-4.3 4.1 1 5.8L10 14.8l-5.2 2.7 1-5.8-4.3-4.1 5.9-.8Z"/></svg>
             </span>
             <span class="rev-score">5</span>
-            <span class="rev-dot">•</span>
-            <span class="rev-date">9 months ago</span>
           </div>
 
           <p class="rev-text">
@@ -572,8 +601,6 @@
               <svg viewBox="0 0 20 20" fill="currentColor"><path d="m10 1.5 2.6 5.3 5.9.8-4.3 4.1 1 5.8L10 14.8l-5.2 2.7 1-5.8-4.3-4.1 5.9-.8Z"/></svg>
             </span>
             <span class="rev-score">5</span>
-            <span class="rev-dot">•</span>
-            <span class="rev-date">10 months ago</span>
           </div>
 
           <p class="rev-text">
@@ -604,8 +631,6 @@
               <svg viewBox="0 0 20 20" fill="currentColor"><path d="m10 1.5 2.6 5.3 5.9.8-4.3 4.1 1 5.8L10 14.8l-5.2 2.7 1-5.8-4.3-4.1 5.9-.8Z"/></svg>
             </span>
             <span class="rev-score">5</span>
-            <span class="rev-dot">•</span>
-            <span class="rev-date">1 year ago</span>
           </div>
 
           <p class="rev-text">
@@ -634,8 +659,6 @@
               <svg viewBox="0 0 20 20" fill="currentColor"><path d="m10 1.5 2.6 5.3 5.9.8-4.3 4.1 1 5.8L10 14.8l-5.2 2.7 1-5.8-4.3-4.1 5.9-.8Z"/></svg>
             </span>
             <span class="rev-score">5</span>
-            <span class="rev-dot">•</span>
-            <span class="rev-date">7 months ago</span>
           </div>
 
           <p class="rev-text">
@@ -664,8 +687,6 @@
               <svg viewBox="0 0 20 20" fill="none" stroke="currentColor" stroke-width="1.6"><path d="m10 2.2 2.3 4.7 5.2.7-3.8 3.6.9 5.1L10 13.9l-4.6 2.4.9-5.1-3.8-3.6 5.2-.7Z"/></svg>
             </span>
             <span class="rev-score">4.3</span>
-            <span class="rev-dot">•</span>
-            <span class="rev-date">9 months ago</span>
           </div>
 
           <p class="rev-text">
@@ -694,8 +715,6 @@
               <svg viewBox="0 0 20 20" fill="currentColor"><path d="m10 1.5 2.6 5.3 5.9.8-4.3 4.1 1 5.8L10 14.8l-5.2 2.7 1-5.8-4.3-4.1 5.9-.8Z"/></svg>
             </span>
             <span class="rev-score">5</span>
-            <span class="rev-dot">•</span>
-            <span class="rev-date">10 months ago</span>
           </div>
 
           <p class="rev-text">
@@ -826,9 +845,9 @@
         <p class="foot__sub">Напишите, что задумали. В течение рабочего дня отвечу и предложу, как превратить идею в готовый сайт.</p>
       </div>
 
-      <a class="menu__cta-circle foot__circle" href="#" data-stub aria-disabled="true" data-magnetic="0.2">
-        <span>Связаться</span>
-        <span>со мной</span>
+      <a class="btn btn--primary foot__button" href="#" data-stub aria-disabled="true" data-magnetic>
+        <span>Связаться со мной</span>
+        <svg viewBox="0 0 24 24" fill="none" stroke="currentColor" stroke-width="2.2" stroke-linecap="round" stroke-linejoin="round" aria-hidden="true"><path d="M7 17 17 7M8 7h9v9"/></svg>
       </a>
     </div>
 

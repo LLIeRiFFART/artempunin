@@ -215,22 +215,31 @@
 
   function initReveal() {
     var items = $$('[data-reveal]');
+    root.classList.remove('reveal-ready');
     if (!items.length) return;
-    items.forEach(function (el) {
-      if (el.dataset.reveal === 'words') splitWords(el);
-    });
-    if (reduceMotion.matches) {
+    if (reduceMotion.matches || !window.IntersectionObserver) {
       items.forEach(function (el) { el.classList.add('is-in'); });
       return;
     }
-    observe(items, function (entries, io) {
-      entries.forEach(function (entry) {
-        if (entry.isIntersecting) {
-          entry.target.classList.add('is-in');
-          io.unobserve(entry.target);
-        }
+    var io = null;
+    try {
+      items.forEach(function (el) {
+        if (el.dataset.reveal === 'words') splitWords(el);
       });
-    }, { threshold: 0.12, rootMargin: '0px 0px -6% 0px' });
+      io = observe(items, function (entries, observer) {
+        entries.forEach(function (entry) {
+          if (entry.isIntersecting) {
+            entry.target.classList.add('is-in');
+            observer.unobserve(entry.target);
+          }
+        });
+      }, { threshold: 0.12, rootMargin: '0px 0px -6% 0px' });
+      root.classList.add('reveal-ready');
+    } catch (e) {
+      if (io) io.disconnect();
+      root.classList.remove('reveal-ready');
+      items.forEach(function (el) { el.classList.add('is-in'); });
+    }
   }
 
   function initCounters() {
@@ -937,28 +946,6 @@
     });
   }
 
-  function initFooterCta() {
-    var text = $('.foot__text');
-    var circle = $('.foot__circle');
-    if (!text || !circle) return;
-    var wide = window.matchMedia('(min-width: 768px)');
-
-    function sync() {
-      if (!wide.matches) { circle.style.removeProperty('--foot-circle'); return; }
-      var h = text.getBoundingClientRect().height;
-      if (h > 0) circle.style.setProperty('--foot-circle', h.toFixed(2) + 'px');
-    }
-
-    sync();
-    on(window, 'resize', sync);
-    if (window.ResizeObserver) {
-      var ro = new ResizeObserver(sync);
-      ro.observe(text);
-      observers.push(ro);
-    }
-    if (document.fonts && document.fonts.ready) document.fonts.ready.then(function () { if (alive) sync(); });
-  }
-
   function initPolicy() {
     var modal = $('.policy');
     if (!modal) return;
@@ -1058,7 +1045,6 @@
     initFaq();
     initReviews();
     initFooterName();
-    initFooterCta();
     initPolicy();
     initAnchors();
     initCopyright();
@@ -1067,6 +1053,7 @@
 
   function destroy() {
     alive = false;
+    root.classList.remove('reveal-ready');
     if (ctrl) ctrl.abort();
     observers.forEach(function (io) { io.disconnect(); });
     observers = [];
