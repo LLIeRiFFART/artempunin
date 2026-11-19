@@ -100,6 +100,7 @@
       window.clearTimeout(focusTimer);
       root.classList.add('menu-open');
       burger.setAttribute('aria-expanded', 'true');
+      menu.removeAttribute('inert');
       menu.setAttribute('aria-hidden', 'false');
       if (viaKeyboard) {
         focusTimer = later(function () {
@@ -114,10 +115,12 @@
       window.clearTimeout(focusTimer);
       root.classList.remove('menu-open');
       burger.setAttribute('aria-expanded', 'false');
-      menu.setAttribute('aria-hidden', 'true');
-      if (viaKeyboard && lastFocus && lastFocus.focus) {
-        lastFocus.focus({ preventScroll: true });
+      if (viaKeyboard || menu.contains(document.activeElement)) {
+        var returnFocus = viaKeyboard && lastFocus && lastFocus.focus ? lastFocus : burger;
+        returnFocus.focus({ preventScroll: true });
       }
+      menu.setAttribute('inert', '');
+      menu.setAttribute('aria-hidden', 'true');
     }
 
     on(burger, 'click', function (e) {
@@ -153,6 +156,7 @@
       on(a, 'click', function () { if (!a.hasAttribute('data-stub')) close(); });
     });
 
+    menu.setAttribute('inert', '');
     menu.setAttribute('aria-hidden', 'true');
   }
 
@@ -1060,6 +1064,14 @@
     timers.forEach(function (id) { window.clearTimeout(id); });
     timers = [];
     root.classList.remove('menu-open');
+    var menu = $('.menu');
+    var burger = $('.burger');
+    if (menu) {
+      if (menu.contains(document.activeElement) && burger) burger.focus({ preventScroll: true });
+      menu.setAttribute('inert', '');
+      menu.setAttribute('aria-hidden', 'true');
+    }
+    if (burger) burger.setAttribute('aria-expanded', 'false');
     root.classList.remove('modal-open');
     var cursor = $('.cursor');
     if (cursor) cursor.remove();
